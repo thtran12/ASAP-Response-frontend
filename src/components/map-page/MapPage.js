@@ -2,6 +2,7 @@ import React from 'react';
 import './MapPage.css';
 import Dashboard from '../map-page/Dashboard';
 import ReactMapGL, { Marker } from 'react-map-gl';
+import sampleData from '../../datasets/sampleData.json';
 
 const MapPage = ({ viewport, setViewport }) => {
 	return (
@@ -14,7 +15,16 @@ const MapPage = ({ viewport, setViewport }) => {
 					mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_TOKEN}
 					onViewportChange={(viewport) => {
 						setViewport(viewport);
-					}}></ReactMapGL>
+					}}>
+					{sampleData.users.map((user) => (
+						<Marker
+							key={user.ID}
+							latitude={user.latitude}
+							longitude={user.longitude}>
+							<button className='person-marker'>a</button>
+						</Marker>
+					))}
+				</ReactMapGL>
 			</div>
 		</div>
 	);
