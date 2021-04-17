@@ -20,10 +20,10 @@ class Header extends Component {
           
           <Navbar.Collapse className="navbar-sides order-1 order-md-0 w-100">
             <Nav activekey={window.location.pathname}>
-              <LinkContainer to="/about" className="navlinks">
+              <LinkContainer to="/about">
                 <Nav.Link>About</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="contact" className="navlinks">
+              <LinkContainer to="contact">
                 <Nav.Link>Contact</Nav.Link>
               </LinkContainer>
             </Nav>
@@ -34,14 +34,14 @@ class Header extends Component {
             className="mx-auto order-0 order-md-1"
           >
             <LinkContainer to="/">
-              <Navbar.Brand className="mx-auto">FirstResponders</Navbar.Brand>
+              <Navbar.Brand className="mx-auto">ASAP response</Navbar.Brand>
             </LinkContainer>
           </Nav>
           
           <Navbar.Collapse className="navbar-sides ml-auto order-2 w-100">
             <Nav activekey={window.location.pathname} className="ml-auto">
               <LinkContainer to="/map" className="navlinks">
-                <Nav.Link>Map</Nav.Link>
+                <Nav.Link>Sign Up</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/login" className="navlinks">
                 <Nav.Link>Log In</Nav.Link>
