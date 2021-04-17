@@ -1,3 +1,9 @@
-.main{
-    margin-top: 56px;
+.map-page-container {
+	position: fixed;
+	height: 90vh;
+}
+
+.person-marker {
+	width: 40px;
+	height: 40px;
 }
