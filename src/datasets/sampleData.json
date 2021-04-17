@@ -1,0 +1,14 @@
+{
+	"users": [
+		{
+			"latitude": 32.716038,
+			"longitude": -117.252674,
+			"risk": 5
+		},
+		{
+			"latitude": 32.748962,
+			"longitude": -117.200798,
+			"risk": 2
+		}
+	]
+}
