@@ -1,7 +1,86 @@
-.main{
-    margin-top: 56px;
+.landing-container {
+	position: absolute;
+	background: url('../../icons/bg1.png');
+	width: 100vw;
+	top: 15vh;
+	height: 85vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.center{
-    text-align: center;
+.center-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 70vw;
+	height: 60vh;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* background-color: aquamarine; */
+	width: 35vw;
+}
+
+.right {
+	width: 35vw;
+}
+
+.login-btn {
+	background-color: #93eff4;
+	color: #834dc8;
+}
+
+.login-btn:hover {
+}
+
+.map-btn {
+	background-color: #834dc8;
+	color: #93eff4;
+}
+
+.map-btn:hover {
+}
+
+.login-btn,
+.map-btn {
+	width: 117px;
+	height: 46px;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	border-radius: 8px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+
+	font-family: Red Rose;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 20px;
+	text-decoration: none;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: row;
+}
+
+.slogan {
+	font-family: Red Rose;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 80px;
+	display: flex;
+	align-items: center;
+	text-align: center;
 }

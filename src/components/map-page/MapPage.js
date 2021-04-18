@@ -41,7 +41,7 @@ const MapPage = () => {
 				<ReactMapGL
 					{...viewport}
 					mapStyle='mapbox://styles/sirafiahsa/cknlf75oo0ig617l8j28d28xj'
-					mapboxApiAccessToken="pk.eyJ1Ijoic2lyYWZpYWhzYSIsImEiOiJja25sY3VoazkwZmcyMm5wZWlyeWkyeGpmIn0.PlbqOdRPcKco2Om04CMrRg"
+					mapboxApiAccessToken='pk.eyJ1Ijoic2lyYWZpYWhzYSIsImEiOiJja25sY3VoazkwZmcyMm5wZWlyeWkyeGpmIn0.PlbqOdRPcKco2Om04CMrRg'
 					onViewportChange={(viewport) => {
 						setViewport(viewport);
 					}}>
