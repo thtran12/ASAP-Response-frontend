@@ -76,8 +76,8 @@ const MapPage = () => {
             setViewport(viewport);
           }}
         >
-          {/* {sampleData.users.map((user) => ( */}
-          {users.map((user) => (
+          {sampleData.users.map((user) => (
+        //   {users.map((user) => (
             <Marker
               key={user.id}
               latitude={user.latitude}
