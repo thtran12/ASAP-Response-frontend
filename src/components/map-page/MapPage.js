@@ -87,9 +87,9 @@ const MapPage = () => {
               }}
             >
               <div>
-                <h5>{selectedUser.name}</h5>
-                <p>{selectedUser.home}</p>
-                <p>{selectedUser.phone}</p>
+                <h5 style={{fontSize: "15px"}}>{selectedUser.name}</h5>
+                <p style={{fontSize: "12px"}}>{selectedUser.home}</p>
+                <p style={{fontSize: "12px"}}>{selectedUser.phone}</p>
               </div>
             </Popup>
           ) : null}
