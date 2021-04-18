@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MapPage.css";
 import Dashboard from "../map-page/Dashboard";
 import ReactMapGL, {
@@ -38,7 +38,7 @@ const MapPage = () => {
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const url = "https://asap-response-api.herokuapp.com/users/all";
     fetch(url, { method: "GET" })
       .then((res) => res.json())
@@ -47,6 +47,21 @@ const MapPage = () => {
       })
       .catch((err) => console.log(err));
   }, []);
+
+  //   post request
+  const onSubmit = () => {
+    const jsonReport = {};
+    const url = "https://asap-response-api.herokuapp.com/reports/new";
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(jsonReport),
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((err) => console.log(err));
+  };
 
   return (
     <div className="map-page-container">
@@ -87,9 +102,9 @@ const MapPage = () => {
               }}
             >
               <div>
-                <h5 style={{fontSize: "15px"}}>{selectedUser.name}</h5>
-                <p style={{fontSize: "12px"}}>{selectedUser.home}</p>
-                <p style={{fontSize: "12px"}}>{selectedUser.phone}</p>
+                <h5 style={{ fontSize: "15px" }}>{selectedUser.name}</h5>
+                <p style={{ fontSize: "12px" }}>{selectedUser.home}</p>
+                <p style={{ fontSize: "12px" }}>{selectedUser.phone}</p>
               </div>
             </Popup>
           ) : null}
