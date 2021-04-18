@@ -56,6 +56,14 @@ const Dashboard = ({ handleSubmit }) => {
 					</div>
 				</div>
 				<div className='row location-row'>
+					<label for='location'>Description</label>
+					<textarea
+						name='comment'
+						id='desc'
+						form='usrform'
+						placeholder='Enter text here...'></textarea>
+				</div>
+				<div className='row location-row'>
 					<label for='location'>Location</label>
 					<input
 						type='number'
@@ -113,38 +121,22 @@ const Dashboard = ({ handleSubmit }) => {
 							var jsonObj = {
 								id: Date.now().toString(),
 								title: type,
-								description: Date.now().toString(),
+								description: document.getElementById('desc').value,
 								latitude: lat,
 								longitude: long,
 								radius: rad,
 							};
 							console.log('Form submission recieved', jsonObj);
-							handleSubmit(jsonObj);
+							// handleSubmit(jsonObj);
 						}}
 						className='submit-btn'>
-						Submit
+						Send Alert
 					</button>
 					<button type='button' className='action-btn'>
 						View Impact
 					</button>
 				</div>
 			</form>
-			{/* <h1>Emergency Type</h1>
-			<div className='emergency-container'>
-				<ul>
-					<li>
-						<button className='emergency-type'>Fire</button>
-					</li>
-					<li>
-						<button className='emergency-type'>Earthquake</button>
-					</li>
-					<li>
-						<button className='emergency-type'>Storm & Thunder</button>
-					</li>
-				</ul>
-			</div>
-			<h1>Location: </h1>
-			<h1>Radius:</h1> */}
 		</div>
 	);
 };

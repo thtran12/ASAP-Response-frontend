@@ -2,8 +2,8 @@
 	position: absolute;
 	width: 30vw;
 	left: 5vw;
-	top: 5vh;
-	height: 75vh;
+	top: 2.5vh;
+	height: 80vh;
 	background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 30px;
 	text-align: center;
@@ -54,10 +54,13 @@ form img {
 /* IMAGE STYLES */
 [type='radio'] + img {
 	cursor: pointer;
-	filter: brightness(70%);
+	filter: brightness(50%);
 	transition: 0.3s ease-in-out;
 }
 
+textarea {
+	all: unset;
+}
 /* CHECKED STYLES */
 [type='radio']:checked + img {
 	filter: brightness(100%);
