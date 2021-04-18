@@ -9,6 +9,7 @@ import ReactMapGL, {
   Popup,
 } from "react-map-gl";
 import { FaUserAlt } from "react-icons/fa";
+import sampleData from '../../datasets/sampleData.json';
 
 const fullscreenControlStyle = {
   left: 10,
@@ -75,6 +76,7 @@ const MapPage = () => {
             setViewport(viewport);
           }}
         >
+		  {/* {sampleData.users.map((user) => ( */}
           {users.map((user) => (
             <Marker
               key={user.id}
