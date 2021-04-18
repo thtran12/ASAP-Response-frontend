@@ -113,10 +113,11 @@ const Dashboard = ({ handleSubmit, handleDisplay, marker }) => {
 							var lat = document.getElementById('latitude').value;
 							var long = document.getElementById('longitude').value;
 							var rad = document.getElementById('radius').value;
+							var desc = document.getElementById('desc').value;
 							var jsonObj = {
 								id: '607b0b1fd2caffb3569da4d5',
 								title: type,
-								description: 'some description',
+								description: desc,
 								latitude: lat,
 								longitude: long,
 								radius: rad,
