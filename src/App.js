@@ -19,26 +19,6 @@ class App extends Component {
     };
   }
 
-  convertToRadians(val) {
-    return val / (180 / Math.PI);
-  }
-
-  distanceInMiles(lat1, long1, lat2, long2) {
-    const lat1Rad = this.convertToRadians(lat1);
-    const long1Rad = this.convertToRadians(long1);
-    const lat2Rad = this.convertToRadians(lat2);
-    const long2Rad = this.convertToRadians(long2);
-
-    const distance =
-      3963 *
-      Math.acos(
-        Math.sin(lat1Rad) * Math.sin(lat2Rad) +
-          Math.cos(lat1Rad) * Math.cos(lat2Rad) * Math.cos(long2Rad - long1Rad)
-      );
-
-    return distance;
-  }
-
   setViewPort(viewport) {
     this.setState({ viewport });
   }

@@ -20,10 +20,10 @@ class Header extends Component {
           
           <Navbar.Collapse className="navbar-sides order-1 order-md-0 w-100">
             <Nav activekey={window.location.pathname}>
-              <LinkContainer to="/about">
+              <LinkContainer to="/about" className="mx-4">
                 <Nav.Link>About</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="contact">
+              <LinkContainer to="contact" className="mx-4">
                 <Nav.Link>Contact</Nav.Link>
               </LinkContainer>
             </Nav>
@@ -40,10 +40,10 @@ class Header extends Component {
           
           <Navbar.Collapse className="navbar-sides ml-auto order-2 w-100">
             <Nav activekey={window.location.pathname} className="ml-auto">
-              <LinkContainer to="/map" className="navlinks">
+              <LinkContainer to="/map" className="mx-4">
                 <Nav.Link>Sign Up</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/login" className="navlinks">
+              <LinkContainer to="/login" className="mx-4">
                 <Nav.Link>Log In</Nav.Link>
               </LinkContainer>
             </Nav>
