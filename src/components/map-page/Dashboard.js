@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
 
-const Dashboard = ({ handleSubmit }) => {
+const Dashboard = ({ handleSubmit, handleDisplay }) => {
 	const [type, setType] = useState('');
 	return (
 		<div className='dashboard-container'>
@@ -54,6 +54,14 @@ const Dashboard = ({ handleSubmit }) => {
 							Flood
 						</label>
 					</div>
+				</div>
+				<div className='row location-row'>
+					<label for='location'>Description</label>
+					<textarea
+						name='comment'
+						id='desc'
+						form='usrform'
+						placeholder='Enter text here...'></textarea>
 				</div>
 				<div className='row location-row'>
 					<label for='location'>Location</label>
@@ -111,9 +119,15 @@ const Dashboard = ({ handleSubmit }) => {
 							// console.log('radius: ', document.getElementById('radius').value);
 
 							var jsonObj = {
+<<<<<<< HEAD
 								id: "607b0b1fd2caffb3569da4d5",
 								title: type,
 								description: "some description",
+=======
+								id: Date.now().toString(),
+								title: type,
+								description: document.getElementById('desc').value,
+>>>>>>> ea61f1179fad20b6934bccd3a686e5b3f4f8e108
 								latitude: lat,
 								longitude: long,
 								radius: rad,
@@ -122,29 +136,13 @@ const Dashboard = ({ handleSubmit }) => {
 							handleSubmit(jsonObj);
 						}}
 						className='submit-btn'>
-						Submit
+						Send Alert
 					</button>
-					<button type='button' className='action-btn'>
+					<button type='button' className='action-btn' onClick={handleDisplay}>
 						View Impact
 					</button>
 				</div>
 			</form>
-			{/* <h1>Emergency Type</h1>
-			<div className='emergency-container'>
-				<ul>
-					<li>
-						<button className='emergency-type'>Fire</button>
-					</li>
-					<li>
-						<button className='emergency-type'>Earthquake</button>
-					</li>
-					<li>
-						<button className='emergency-type'>Storm & Thunder</button>
-					</li>
-				</ul>
-			</div>
-			<h1>Location: </h1>
-			<h1>Radius:</h1> */}
 		</div>
 	);
 };
