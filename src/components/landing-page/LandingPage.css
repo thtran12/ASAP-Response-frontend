@@ -25,7 +25,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/* background-color: aquamarine; */
 	width: 35vw;
 }
 
@@ -39,6 +38,7 @@
 }
 
 .login-btn:hover {
+	background-color: #f07167;
 }
 
 .map-btn {
@@ -47,6 +47,7 @@
 }
 
 .map-btn:hover {
+	background-color: #f07167;
 }
 
 .login-btn,

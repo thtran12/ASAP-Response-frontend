@@ -10,18 +10,16 @@ import ReactMapGL, {
 import sampleData from '../../datasets/sampleData.json';
 
 const fullscreenControlStyle = {
-	left: 10,
-	top: 50,
+	top: 60,
+	right: 20,
 };
 const navigationStyle = {
-	top: 80,
-	left: 0,
-	margin: 10,
+	top: 100,
+	right: 20,
 };
 const geolocateStyle = {
-	top: 0,
-	left: 0,
-	margin: 10,
+	top: 20,
+	right: 20,
 };
 const positionOptions = { enableHighAccuracy: true };
 
@@ -40,7 +38,7 @@ const MapPage = () => {
 			<div className='map-container'>
 				<ReactMapGL
 					{...viewport}
-					mapStyle='mapbox://styles/sirafiahsa/cknlf75oo0ig617l8j28d28xj'
+					mapStyle='mapbox://styles/sirafiahsa/cknleef2d2sr317ru3btk0wpr'
 					mapboxApiAccessToken='pk.eyJ1Ijoic2lyYWZpYWhzYSIsImEiOiJja25sY3VoazkwZmcyMm5wZWlyeWkyeGpmIn0.PlbqOdRPcKco2Om04CMrRg'
 					onViewportChange={(viewport) => {
 						setViewport(viewport);
