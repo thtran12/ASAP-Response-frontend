@@ -102,9 +102,7 @@ const MapPage = () => {
 	};
 
 	const onSubmit = (jsonReport) => {
-		/* dont spam abhiraj :o
-		 postRequest(jsonReport); 
-    */
+		postRequest(jsonReport);
 	};
 
 	const onDisplay = (jsonReport) => {
