@@ -2,17 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './MapPage.css';
 import Dashboard from '../map-page/Dashboard';
 import ReactMapGL, {
-<<<<<<< HEAD
-  Marker,
-  NavigationControl,
-  GeolocateControl,
-  FullscreenControl,
-  Popup,
-} from "react-map-gl";
-import { FaUserAlt } from "react-icons/fa";
-import sampleData from "../../datasets/sampleData.json";
-import axios from 'axios';
-=======
 	Marker,
 	NavigationControl,
 	GeolocateControl,
@@ -21,7 +10,6 @@ import axios from 'axios';
 } from 'react-map-gl';
 import { FaUserAlt } from 'react-icons/fa';
 import sampleData from '../../datasets/sampleData.json';
->>>>>>> ea61f1179fad20b6934bccd3a686e5b3f4f8e108
 
 const riskLevels = ['#27FA3C', '#ECF038', '#FF7B01', '#EF1B1B', '#AC07AF'];
 const fullscreenControlStyle = {
@@ -60,35 +48,6 @@ const MapPage = () => {
 			.catch((err) => console.log(err));
 	};
 
-<<<<<<< HEAD
-  const postRequest = (jsonReport) => {
-	const url = 'https://asap-response-api.herokuapp.com/reports/new';
-// 	fetch(url, {
-// 		method: 'POST',
-// 		body: JSON.stringify(jsonReport),
-// 	})
-// 		.then((res) => res.json())
-// 		.then((response) => {
-// 			console.log(response);
-// 		})
-// 		.catch((err) => console.log(err));
-//   }
-	const data = {
-		id: jsonReport.id, 
-		title: jsonReport.title,
-		description: jsonReport.description,
-		latitude: jsonReport.latitude.toString(),
-		longitude: jsonReport.longitude.toString(),
-		radius: jsonReport.radius.toString()
-	}
-
-	axios.post(url, data).then(response => console.log(response))
-}
-
-	const onSubmit = (jsonReport) => {
-		console.log('in map page submit function');
-		console.log(jsonReport);
-=======
 	const postRequest = (jsonReport) => {
 		console.log('post', jsonReport);
 		const url = 'https://asap-response-api.herokuapp.com/reports/new';
@@ -104,7 +63,6 @@ const MapPage = () => {
 	};
 
 	const onSubmit = (jsonReport) => {
->>>>>>> ea61f1179fad20b6934bccd3a686e5b3f4f8e108
 		postRequest(jsonReport);
 	};
 
