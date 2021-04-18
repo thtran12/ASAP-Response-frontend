@@ -111,9 +111,9 @@ const Dashboard = ({ handleSubmit }) => {
 							// console.log('radius: ', document.getElementById('radius').value);
 
 							var jsonObj = {
-								id: Date.now(),
+								id: "607b0b1fd2caffb3569da4d5",
 								title: type,
-								description: Date.now(),
+								description: "some description",
 								latitude: lat,
 								longitude: long,
 								radius: rad,

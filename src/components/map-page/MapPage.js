@@ -10,6 +10,7 @@ import ReactMapGL, {
 } from "react-map-gl";
 import { FaUserAlt } from "react-icons/fa";
 import sampleData from "../../datasets/sampleData.json";
+import axios from 'axios';
 
 const fullscreenControlStyle = {
   top: 60,
@@ -49,22 +50,35 @@ const MapPage = () => {
 
   const postRequest = (jsonReport) => {
 	const url = 'https://asap-response-api.herokuapp.com/reports/new';
-	fetch(url, {
-		method: 'POST',
-		body: JSON.stringify(jsonReport),
-	})
-		.then((res) => res.json())
-		.then((response) => {
-			console.log(response);
-		})
-		.catch((err) => console.log(err));
-  }
+// 	fetch(url, {
+// 		method: 'POST',
+// 		body: JSON.stringify(jsonReport),
+// 	})
+// 		.then((res) => res.json())
+// 		.then((response) => {
+// 			console.log(response);
+// 		})
+// 		.catch((err) => console.log(err));
+//   }
+	const data = {
+		id: jsonReport.id, 
+		title: jsonReport.title,
+		description: jsonReport.description,
+		latitude: jsonReport.latitude.toString(),
+		longitude: jsonReport.longitude.toString(),
+		radius: jsonReport.radius.toString()
+	}
+
+	axios.post(url, data).then(response => console.log(response))
+}
 
 	const onSubmit = (jsonReport) => {
 		console.log('in map page submit function');
+		console.log(jsonReport);
 		postRequest(jsonReport);
 		getRequest();
 	};
+	
 
 	return (
 		<div className='map-page-container'>
