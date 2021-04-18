@@ -108,20 +108,10 @@ const Dashboard = ({ handleSubmit, handleDisplay }) => {
 							var lat = document.getElementById('latitude').value;
 							var long = document.getElementById('longitude').value;
 							var rad = document.getElementById('radius').value;
-							// console.log(
-							// 	'longitude: ',
-							// 	document.getElementById('longitude').value
-							// );
-							// console.log(
-							// 	'latitude: ',
-							// 	document.getElementById('latitude').value
-							// );
-							// console.log('radius: ', document.getElementById('radius').value);
-
 							var jsonObj = {
-								id: "607b0b1fd2caffb3569da4d5",
+								id: '607b0b1fd2caffb3569da4d5',
 								title: type,
-								description: "some description",
+								description: 'some description',
 								latitude: lat,
 								longitude: long,
 								radius: rad,
@@ -132,7 +122,31 @@ const Dashboard = ({ handleSubmit, handleDisplay }) => {
 						className='submit-btn'>
 						Send Alert
 					</button>
-					<button type='button' className='action-btn' onClick={handleDisplay}>
+					<button
+						type='button'
+						className='action-btn'
+						onClick={(e) => {
+							e.preventDefault();
+							var radios = document.getElementsByName('disaster');
+							var type = '';
+							for (var radio of radios) {
+								if (radio.checked) {
+									type = radio.value;
+								}
+							}
+							var lat = document.getElementById('latitude').value;
+							var long = document.getElementById('longitude').value;
+							var rad = document.getElementById('radius').value;
+							var jsonObj = {
+								id: '607b0b1fd2caffb3569da4d5',
+								title: type,
+								description: 'some description',
+								latitude: lat,
+								longitude: long,
+								radius: rad,
+							};
+							handleDisplay(jsonObj);
+						}}>
 						View Impact
 					</button>
 				</div>

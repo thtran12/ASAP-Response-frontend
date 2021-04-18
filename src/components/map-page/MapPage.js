@@ -66,11 +66,10 @@ const MapPage = () => {
 		postRequest(jsonReport);
 	};
 
-	const onDisplay = () => {
+	const onDisplay = (jsonReport) => {
 		setUsers(sampleData.users); // Sample data
 		// getRequest(); Real data
 	};
-	
 
 	return (
 		<div className='map-page-container'>
