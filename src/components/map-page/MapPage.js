@@ -48,8 +48,9 @@ const MapPage = () => {
 	}, []);
 
 	//   post request
-	const onSubmit = () => {
-		const jsonReport = {};
+	const onSubmit = (jsonReport) => {
+		console.log('in map page submit function');
+		// const jsonReport = {};
 		const url = 'https://asap-response-api.herokuapp.com/reports/new';
 		fetch(url, {
 			method: 'POST',
@@ -64,7 +65,7 @@ const MapPage = () => {
 
 	return (
 		<div className='map-page-container'>
-			<Dashboard />
+			<Dashboard handleSubmit={onSubmit} />
 			<div className='map-container'>
 				<ReactMapGL
 					{...viewport}
