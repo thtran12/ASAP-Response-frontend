@@ -55,20 +55,27 @@ const Dashboard = () => {
 						</label>
 					</div>
 				</div>
-				<div className='row'>
+				<div className='row location-row'>
 					<label for='location'>Location</label>
 					<input
-						type='text'
-						id='location'
-						name='location'
-						placeholder='Enter coordinates'
-					/>{' '}
-					<button className='locate-btn' type='button'>
-						Locate
-					</button>
+						type='number'
+						id='longitude'
+						name='longitude'
+						placeholder='Longitude'
+					/>
+					<input
+						type='number'
+						id='latitude'
+						name='latitude'
+						placeholder='Latitude'
+					/>
 				</div>
 
-				<div className='row'>
+				<button className='locate-btn' type='button'>
+					Locate
+				</button>
+
+				<div className='row radius-row'>
 					<label for='radius'>Radius </label>
 					<input
 						type='number'
