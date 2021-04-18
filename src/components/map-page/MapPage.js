@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import './MapPage.css';
 import Dashboard from '../map-page/Dashboard';
 import ReactMapGL, {
@@ -11,7 +11,6 @@ import ReactMapGL, {
 import { FaUserAlt } from 'react-icons/fa';
 import sampleData from '../../datasets/sampleData.json';
 
-const MAP_STYLE_1 = 'mapbox://styles/sirafiahsa/cknleef2d2sr317ru3btk0wpr';
 const MAP_STYLE_2 = 'mapbox://styles/sirafiahsa/cknlf75oo0ig617l8j28d28xj';
 const ICON = `M20.2,15.7L20.2,15.7c1.1-1.6,1.8-3.6,1.8-5.7c0-5.6-4.5-10-10-10S2,4.5,2,10c0,2,0.6,3.9,1.6,5.4c0,0.1,0.1,0.2,0.2,0.3
 c0,0,0.1,0.1,0.1,0.2c0.2,0.3,0.4,0.6,0.7,0.9c2.6,3.1,7.4,7.6,7.4,7.6s4.8-4.5,7.4-7.5c0.2-0.3,0.5-0.6,0.7-0.9
@@ -77,16 +76,6 @@ const MapPage = () => {
 		});
 	}, []);
 
-	const getRequest = () => {
-		const url = 'https://asap-response-api.herokuapp.com/users/all';
-		fetch(url, { method: 'GET' })
-			.then((res) => res.json())
-			.then((response) => {
-				setUsers(response);
-			})
-			.catch((err) => console.log(err));
-	};
-
 	const postRequest = (jsonReport) => {
 		console.log('post', jsonReport);
 		const url = 'https://asap-response-api.herokuapp.com/reports/new';
@@ -116,8 +105,6 @@ const MapPage = () => {
 					distanceInMiles(user.latitude, user.longitude, lat, long) < rad
 			)
 		);
-		// Sample data
-		// getRequest(); Real data
 	};
 
 	return (

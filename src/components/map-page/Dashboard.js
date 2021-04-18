@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Dashboard.css';
 
 const Dashboard = ({ handleSubmit, handleDisplay, marker }) => {
-	const [type, setType] = useState('');
 	return (
 		<div className='dashboard-container'>
 			<form className='response'>
