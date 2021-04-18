@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
 
-const Dashboard = () => {
+const Dashboard = ({ handleSubmit }) => {
 	const [type, setType] = useState('');
 	return (
 		<div className='dashboard-container'>
-			<form action='' method='post' className='response'>
+			<form className='response'>
 				<h1>Emergency Type</h1>
 				<div className='emergency-btns'>
 					<div className='card'>
@@ -46,7 +46,7 @@ const Dashboard = () => {
 
 					<div className='card card-4'>
 						<label for='flood'>
-							<input type='radio' id='flood' name='disaster' value='floor' />
+							<input type='radio' id='flood' name='disaster' value='flood' />
 							<img
 								src='https://s3-alpha-sig.figma.com/img/30bd/f983/eeab1d4e2ac0e986adc2aa534a56b60d?Expires=1619395200&Signature=gW4G6hyjm9dKHAk7G9SGiAg9Pa1twnRDox05ka~MFB5-nPV19JLLv~0nxZJIQgqYVdCy3OgE6hyoqwkvCHFaFHU5JtEcLfOvW6icVdpvKaxtIcK1t7fcWU6uzTfOYIupIH0u9KK8k6-Ch5Wgx5EsS~jfosWUgJpi~4AuUAKyEbGIgv~uR51UlzV9hii5RksftNaVrgbmQbvKlvpdacmYkVqPvp~O~toq9SFMxqIgIzb2Jv-ucSL6Wxinq1yEzWV6eomdb3pHkdJo80KPH~5Mw~SqjOURWxXhQhAQTyWXV-hw~NBXkAr0r5OW9M~~OhCXbmrrmhpq20-~kTOV2OnR~w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
 								alt='Flood'
@@ -79,14 +79,49 @@ const Dashboard = () => {
 					<label for='radius'>Radius </label>
 					<input
 						type='number'
-						id='location'
+						id='radius'
 						placeholder='Enter in miles'
 						name='location'
 						min='0'
 					/>
 				</div>
 				<div className='row'>
-					<button type='submit' className='submit-btn'>
+					<button
+						type='submit'
+						onClick={(e) => {
+							e.preventDefault();
+							var radios = document.getElementsByName('disaster');
+							var type = '';
+							for (var radio of radios) {
+								if (radio.checked) {
+									type = radio.value;
+								}
+							}
+							var lat = document.getElementById('latitude').value;
+							var long = document.getElementById('longitude').value;
+							var rad = document.getElementById('radius').value;
+							// console.log(
+							// 	'longitude: ',
+							// 	document.getElementById('longitude').value
+							// );
+							// console.log(
+							// 	'latitude: ',
+							// 	document.getElementById('latitude').value
+							// );
+							// console.log('radius: ', document.getElementById('radius').value);
+
+							var jsonObj = {
+								id: Date.now(),
+								title: type,
+								description: Date.now(),
+								latitude: lat,
+								longitude: long,
+								radius: rad,
+							};
+							console.log('Form submission recieved', jsonObj);
+							handleSubmit(jsonObj);
+						}}
+						className='submit-btn'>
 						Submit
 					</button>
 					<button type='button' className='action-btn'>
