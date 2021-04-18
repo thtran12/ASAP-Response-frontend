@@ -38,6 +38,19 @@ const MapPage = () => {
 	const [users, setUsers] = useState([]);
 	const [selectedUser, setSelectedUser] = useState(null);
 
+	const convertToRadians = (val) => {
+		return val/(180/Math.PI);
+	  }
+	  
+	const distanceInMiles = (lat1,long1,lat2,long2) => {
+		const lat1Rad = convertToRadians(lat1);
+		const long1Rad = convertToRadians(long1);
+		const lat2Rad = convertToRadians(lat2);
+		const long2Rad = convertToRadians(long2);
+		const distance = 3963*Math.acos((Math.sin(lat1Rad)*Math.sin(lat2Rad))+(Math.cos(lat1Rad)*Math.cos(lat2Rad)*Math.cos(long2Rad-long1Rad)));
+		return distance;
+	}
+
 	const getRequest = () => {
 		const url = 'https://asap-response-api.herokuapp.com/users/all';
 		fetch(url, { method: 'GET' })
@@ -70,6 +83,8 @@ const MapPage = () => {
 		setUsers(sampleData.users); // Sample data
 		// getRequest(); Real data
 	};
+
+
 	
 
 	return (
