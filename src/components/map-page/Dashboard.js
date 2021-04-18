@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
 
-const Dashboard = ({ handleSubmit }) => {
+const Dashboard = ({ handleSubmit, handleDisplay }) => {
 	const [type, setType] = useState('');
 	return (
 		<div className='dashboard-container'>
@@ -127,12 +127,12 @@ const Dashboard = ({ handleSubmit }) => {
 								radius: rad,
 							};
 							console.log('Form submission recieved', jsonObj);
-							// handleSubmit(jsonObj);
+							handleSubmit(jsonObj);
 						}}
 						className='submit-btn'>
 						Send Alert
 					</button>
-					<button type='button' className='action-btn'>
+					<button type='button' className='action-btn' onClick={handleDisplay}>
 						View Impact
 					</button>
 				</div>
