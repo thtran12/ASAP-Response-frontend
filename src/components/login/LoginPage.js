@@ -4,8 +4,8 @@ import { withRouter } from "react-router-dom";
 import "./LoginPage.css";
 
 class LoginPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       email: "",
@@ -13,8 +13,12 @@ class LoginPage extends Component {
     };
   }
 
-  async onLoginSubmitted(event) {
+  onLoginSubmitted(event) {
+    event.preventDefault();
+    console.log(this.state);
     //POST request here
+    this.props.onLogin(this.state);
+    this.props.history.push("/");
   }
 
   render() {

@@ -11,6 +11,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      user: null,
       viewport: {
         latitude: 32.712533,
         longitude: -117.15726,
@@ -19,10 +20,17 @@ class App extends Component {
         zoom: 10,
       },
     };
+    this.Login = this.Login.bind(this);
   }
+
 
   setViewPort(viewport) {
     this.setState({ viewport });
+  }
+
+  Login(user){
+    console.log(user);
+    this.setState({ user });
   }
 
   render() {
@@ -45,7 +53,7 @@ class App extends Component {
             ></Route>
           </Switch>
           <Switch>
-            <Route path="/login" exact render={() => <LoginPage />}></Route>
+            <Route path="/login" exact render={() => <LoginPage onLogin={this.Login}/>}></Route>
           </Switch>
         </div>
       </Router>
