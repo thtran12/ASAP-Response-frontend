@@ -40,7 +40,7 @@ class Header extends Component {
           
           <Navbar.Collapse className="navbar-sides ml-auto order-2 w-100">
             <Nav activekey={window.location.pathname} className="ml-auto">
-              <LinkContainer to="/map" className="mx-4">
+              <LinkContainer to="/login" className="mx-4">
                 <Nav.Link>Sign Up</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/login" className="mx-4">
@@ -54,4 +54,4 @@ class Header extends Component {
   }
 }
 
-export default withRouter(Header);
+export default withRouter(Header); 
