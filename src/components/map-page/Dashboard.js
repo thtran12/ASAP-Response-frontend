@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
 
-const Dashboard = ({ handleSubmit, handleDisplay }) => {
+const Dashboard = ({ handleSubmit, handleDisplay, marker }) => {
 	const [type, setType] = useState('');
 	return (
 		<div className='dashboard-container'>
@@ -78,8 +78,13 @@ const Dashboard = ({ handleSubmit, handleDisplay }) => {
 						placeholder='Latitude'
 					/>
 				</div>
-
-				<button className='locate-btn' type='button'>
+				<button
+					className='locate-btn'
+					type='button'
+					onClick={(e) => {
+						document.getElementById('longitude').value = marker.longitude;
+						document.getElementById('latitude').value = marker.latitude;
+					}}>
 					Locate
 				</button>
 
@@ -145,7 +150,9 @@ const Dashboard = ({ handleSubmit, handleDisplay }) => {
 								longitude: long,
 								radius: rad,
 							};
-							handleDisplay(jsonObj);
+							if (lat.length && long.length && rad.length) {
+								handleDisplay(jsonObj);
+							}
 						}}>
 						View Impact
 					</button>

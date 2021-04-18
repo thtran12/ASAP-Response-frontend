@@ -1,22 +1,6 @@
 {
 	"users": [
 		{
-			"id": "11",
-			"name": "Larry L",
-			"phone": "+18148628745",
-			"latitude": 32.716038,
-			"longitude": -117.252674,
-			"risk": 5
-		},
-		{
-			"id": "12",
-			"name": "Heny H",
-			"phone": "+18148628745",
-			"latitude": 32.748962,
-			"longitude": -117.200798,
-			"risk": 2
-		},
-		{
 			"id": "1",
 			"name": "Jack J",
 			"phone": "+18148628745",
@@ -35,7 +19,6 @@
 			"latitude": 32.732346,
 			"longitude": -117.196053,
 			"risk": 4
-
 		},
 		{
 			"id": "3",
@@ -44,7 +27,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1927",
 			"latitude": 32.7542,
-			"longitude": -117.1970,
+			"longitude": -117.197,
 			"risk": 5
 		},
 		{
@@ -68,7 +51,7 @@
 			"risk": 3
 		},
 		{
-			"id": "6" ,
+			"id": "6",
 			"name": "Daisy D",
 			"phone": "+18148628745",
 			"home": "123 Strawberry Lane",
@@ -94,7 +77,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1947",
 			"latitude": 32.8398,
-			"longitude": -117.2523, 
+			"longitude": -117.2523,
 			"risk": 3
 		},
 		{
@@ -114,8 +97,24 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1956",
 			"latitude": 32.8681,
-			"longitude": -117.2503, 
-			"risk": 4
+			"longitude": -117.2503,
+			"risk": 1
+		},
+		{
+			"id": "11",
+			"name": "Larry L",
+			"phone": "+18148628745",
+			"latitude": 32.716038,
+			"longitude": -117.252674,
+			"risk": 5
+		},
+		{
+			"id": "12",
+			"name": "Heny H",
+			"phone": "+18148628745",
+			"latitude": 32.748962,
+			"longitude": -117.200798,
+			"risk": 2
 		},
 		{
 			"id": "13",
@@ -124,7 +123,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1990",
 			"latitude": 36.8681,
-			"longitude": -117.2503, 
+			"longitude": -117.2503,
 			"risk": 2
 		},
 		{
@@ -134,7 +133,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1990",
 			"latitude": 32.4681,
-			"longitude": -117.2503, 
+			"longitude": -117.2503,
 			"risk": 2
 		},
 		{
@@ -144,7 +143,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1994",
 			"latitude": 32.8025,
-			"longitude": -117.2356, 
+			"longitude": -117.2356,
 			"risk": 1
 		},
 		{
@@ -154,7 +153,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1994",
 			"latitude": 32.7805,
-			"longitude": -117.2426, 
+			"longitude": -117.2426,
 			"risk": 1
 		},
 		{
@@ -164,7 +163,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1940",
 			"latitude": 32.7671,
-			"longitude": -117.1941, 
+			"longitude": -117.1941,
 			"risk": 4
 		},
 		{
@@ -174,7 +173,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1940",
 			"latitude": 32.7671,
-			"longitude": -117.1941, 
+			"longitude": -117.1941,
 			"risk": 4
 		},
 		{
@@ -184,7 +183,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1940",
 			"latitude": 32.8801,
-			"longitude": -117.2340, 
+			"longitude": -117.234,
 			"risk": 1
 		},
 		{
@@ -194,7 +193,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1940",
 			"latitude": 32.8701,
-			"longitude": -117.2340, 
+			"longitude": -117.234,
 			"risk": 1
 		},
 		{
@@ -204,7 +203,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1947",
 			"latitude": 32.8398,
-			"longitude": -117.2623, 
+			"longitude": -117.2623,
 			"risk": 2
 		},
 		{
@@ -214,7 +213,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1947",
 			"latitude": 32.8398,
-			"longitude": -117.2223, 
+			"longitude": -117.2223,
 			"risk": 3
 		},
 		{
@@ -224,7 +223,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1947",
 			"latitude": 32.2398,
-			"longitude": -117.2223, 
+			"longitude": -117.2223,
 			"risk": 2
 		},
 		{
@@ -234,7 +233,7 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1947",
 			"latitude": 32.8498,
-			"longitude": -117.2723, 
+			"longitude": -117.2723,
 			"risk": 2
 		},
 		{
@@ -244,7 +243,254 @@
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1947",
 			"latitude": 32.8298,
-			"longitude": -117.2723, 
+			"longitude": -117.2723,
+			"risk": 5
+		},
+
+		{
+			"id": "26",
+			"name": "Jack J",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1920",
+			"latitude": 32.8537,
+			"longitude": -117.169048,
+			"risk": 5
+		},
+		{
+			"id": "27",
+			"name": "Mary M",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1936",
+			"latitude": 32.8859,
+			"longitude": -117.176053,
+			"risk": 4
+		},
+		{
+			"id": "28",
+			"name": "Betty B",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1927",
+			"latitude": 32.7902,
+			"longitude": -117.2018,
+			"risk": 5
+		},
+		{
+			"id": "29",
+			"name": "Thomas T",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1940",
+			"latitude": 32.86521,
+			"longitude": -117.2347,
+			"risk": 1
+		},
+		{
+			"id": "30",
+			"name": "Samantha S",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1950",
+			"latitude": 32.7532,
+			"longitude": -117.2478,
+			"risk": 3
+		},
+		{
+			"id": "31",
+			"name": "Daisy D",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1950",
+			"latitude": 32.7746,
+			"longitude": -117.0856,
+			"risk": 3
+		},
+		{
+			"id": "32",
+			"name": "George G",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.83,
+			"longitude": -117.1098,
+			"risk": 4
+		},
+		{
+			"id": "33",
+			"name": "Daisy D",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.6995,
+			"longitude": -117.0789,
+			"risk": 3
+		},
+		{
+			"id": "34",
+			"name": "Natalie N",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1965",
+			"latitude": 32.7463,
+			"longitude": -117.037,
+			"risk": 3
+		},
+		{
+			"id": "35",
+			"name": "Patrick P",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1956",
+			"latitude": 32.79135,
+			"longitude": -117.0597,
+			"risk": 1
+		},
+		{
+			"id": "36",
+			"name": "Larry L",
+			"phone": "+18148628745",
+			"latitude": 32.8409,
+			"longitude": -117.1483,
+			"risk": 5
+		},
+		{
+			"id": "37",
+			"name": "Heny H",
+			"phone": "+18148628745",
+			"latitude": 32.947,
+			"longitude": -117.2362,
+			"risk": 2
+		},
+		{
+			"id": "38",
+			"name": "Patrick P",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1990",
+			"latitude": 36.91652,
+			"longitude": -117.2554,
+			"risk": 2
+		},
+		{
+			"id": "39",
+			"name": "Danzel D",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1990",
+			"latitude": 32.4681,
+			"longitude": -117.2503,
+			"risk": 2
+		},
+		{
+			"id": "40",
+			"name": "Ann A",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1994",
+			"latitude": 32.696,
+			"longitude": -117.10919,
+			"risk": 1
+		},
+		{
+			"id": "41",
+			"name": "Mary M",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1994",
+			"latitude": 32.6342,
+			"longitude": -117.0721,
+			"risk": 1
+		},
+		{
+			"id": "42",
+			"name": "Jack J",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1940",
+			"latitude": 32.69779,
+			"longitude": -117.0343,
+			"risk": 4
+		},
+		{
+			"id": "43",
+			"name": "Tammy T",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1940",
+			"latitude": 32.77808,
+			"longitude": -117.0419,
+			"risk": 4
+		},
+		{
+			"id": "44",
+			"name": "Betty B",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1940",
+			"latitude": 32.69664,
+			"longitude": -117.1791,
+			"risk": 1
+		},
+		{
+			"id": "45",
+			"name": "Nancy N",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1940",
+			"latitude": 32.8346,
+			"longitude": -117.2766,
+			"risk": 1
+		},
+		{
+			"id": "46",
+			"name": "Donald D",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.8,
+			"longitude": -117.21,
+			"risk": 2
+		},
+		{
+			"id": "47",
+			"name": "Sally S",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.1001,
+			"longitude": -117.91364,
+			"risk": 3
+		},
+		{
+			"id": "48",
+			"name": "George G",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.80809,
+			"longitude": -117.0034,
+			"risk": 2
+		},
+		{
+			"id": "49",
+			"name": "Felicia F",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.61166,
+			"longitude": -117.1352,
+			"risk": 2
+		},
+		{
+			"id": "50",
+			"name": "Samantha S",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.73535,
+			"longitude": -117.0439,
 			"risk": 5
 		}
 	]
