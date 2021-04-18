@@ -133,8 +133,8 @@
 			"phone": "+18148628745",
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1990",
-			"latitude": 31.8681,
-			"longitude": -115.2503, 
+			"latitude": 32.4681,
+			"longitude": -117.2503, 
 			"risk": 2
 		},
 		{
@@ -168,14 +168,84 @@
 			"risk": 4
 		},
 		{
-			"id": "17",
+			"id": "18",
 			"name": "Tammy T",
 			"phone": "+18148628745",
 			"home": "123 Strawberry Lane",
 			"date": "October 10, 1940",
-			"latitude": 31.7671,
+			"latitude": 32.7671,
 			"longitude": -117.1941, 
 			"risk": 4
+		},
+		{
+			"id": "19",
+			"name": "Betty B",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1940",
+			"latitude": 32.8801,
+			"longitude": -117.2340, 
+			"risk": 1
+		},
+		{
+			"id": "20",
+			"name": "Nancy N",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1940",
+			"latitude": 32.8701,
+			"longitude": -117.2340, 
+			"risk": 1
+		},
+		{
+			"id": "21",
+			"name": "Donald D",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.8398,
+			"longitude": -117.2623, 
+			"risk": 2
+		},
+		{
+			"id": "22",
+			"name": "Sally S",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.8398,
+			"longitude": -117.2223, 
+			"risk": 3
+		},
+		{
+			"id": "23",
+			"name": "George G",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.2398,
+			"longitude": -117.2223, 
+			"risk": 2
+		},
+		{
+			"id": "24",
+			"name": "Felicia F",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.8498,
+			"longitude": -117.2723, 
+			"risk": 2
+		},
+		{
+			"id": "25",
+			"name": "Samantha S",
+			"phone": "+18148628745",
+			"home": "123 Strawberry Lane",
+			"date": "October 10, 1947",
+			"latitude": 32.8298,
+			"longitude": -117.2723, 
+			"risk": 5
 		}
 	]
 }
