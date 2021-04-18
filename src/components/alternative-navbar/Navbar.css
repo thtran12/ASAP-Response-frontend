@@ -1,0 +1,33 @@
+.nav {
+	position: absolute;
+	height: 15vh;
+	width: 100vw;
+	z-index: 999;
+	background-color: whitesmoke;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	justify-items: center;
+	align-items: center;
+}
+
+.nav .nav-item {
+	font-family: 'Red Rose';
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
+}
+
+.nav .nav-title {
+	margin: 0 30px 0 30px;
+	font-family: 'Red Rose';
+	font-size: 48px;
+	text-decoration: none;
+	color: black;
+}
+
+.nav .nav-logo {
+	width: 85px;
+	height: 85px;
+}
