@@ -22,10 +22,9 @@
 
 .left {
 	display: flex;
-	flex-direction: column;
+	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
-	/* background-color: aquamarine; */
 	width: 35vw;
 }
 
@@ -39,6 +38,8 @@
 }
 
 .login-btn:hover {
+	background-color: #f07167;
+	color: #834dc8;
 }
 
 .map-btn {
@@ -47,6 +48,8 @@
 }
 
 .map-btn:hover {
+	background-color: #f07167;
+	color: #93eff4;
 }
 
 .login-btn,
@@ -56,13 +59,11 @@
 	transition: 0.2s ease-in-out;
 	text-align: center;
 	border-radius: 8px;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin: 20px;
-
-	font-family: Red Rose;
+	font-family: 'Red Rose';
 	font-style: normal;
 	font-size: 24px;
 	line-height: 20px;
@@ -75,12 +76,12 @@
 }
 
 .slogan {
-	font-family: Red Rose;
+	font-family: 'Red Rose';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 64px;
+	font-size: 20px;
+	width: 20vw;
 	line-height: 80px;
-	display: flex;
 	align-items: center;
-	text-align: center;
+	text-align: right;
 }

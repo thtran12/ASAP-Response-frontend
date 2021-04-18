@@ -14,10 +14,18 @@ class LandingPage extends Component {
 							<h1>Be There.</h1>
 						</div>
 						<div className='buttons'>
-							<Link exact='true' to='/login' className='login-btn'>
+							<Link
+								exact='true'
+								to='/login'
+								className='login-btn'
+								style={{ textDecoration: 'none' }}>
 								Login
 							</Link>
-							<Link exact='true' to='/map' className='map-btn'>
+							<Link
+								exact='true'
+								to='/map'
+								className='map-btn'
+								style={{ textDecoration: 'none' }}>
 								Map
 							</Link>
 						</div>

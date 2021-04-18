@@ -1,4 +1,10 @@
-.main{
-    margin-top: 56px;
-    text-align: center;
+.main {
+	position: absolute;
+	width: 100vw;
+	height: 85vh;
+	top: 15vh;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	text-align: center;
 }
